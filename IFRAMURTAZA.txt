@@ -1,0 +1,103 @@
+  
+
+                             NAME : IFRA MURTAZA
+                             ROLL NUMBER : 454546
+
+
+
+  TASK1
+#include<iostream>
+using namespace std ;
+int main()
+{
+    int x=1 ;
+    cout << "Enter a number : "; 
+    cin>> x;
+    
+    int sum=0;
+    
+    for(int i=1;i<=10;i++) 
+        sum+=i;
+
+    cout << sum;
+
+    return 0;
+}
+
+
+   TASK 2
+#include <iostream>
+using namespace std;
+
+int main() {
+
+    int n;
+
+    cout << "Enter a positive integer: ";
+    cin >> n;
+
+    // run a loop from 1 to 10
+    // print the multiplication table
+    for (int i = 1; i <= 10; ++i) {
+        cout << n << " * " << i << " = " << n * i << endl;
+    }
+    
+    return 0;
+}
+	
+
+
+   TASK 3
+#include<iostream>
+using namespace std;
+int main() {
+
+  int x,fact=1;
+  
+	cout<<"Enter a positive Number:  ";
+	
+	cin>>x;
+	
+	for (int a=1;a<=x;a++)
+	
+	 {
+		fact=fact*a;
+	}
+	cout<<"Factorial = "<< fact <<endl;
+	return 0;
+	
+
+  
+} 
+
+   TASK 4
+#include <iostream>
+using namespace std;
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int num = 9;
+    int n1 = 0, n2 = 1;
+    int nextTerm;
+    // Here we are printing 0th and 1st terms
+    cout<<"Enter the number of element: ";
+    cin >>num;
+    cout << n1 << ", " << n2 << ", ";
+    
+    
+    // printing the rest of the terms here
+    for(int i = 2; i < num; i++){
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+        
+        cout << nextTerm <<" , ";
+    }
+
+    return 0;
+}
+
+
